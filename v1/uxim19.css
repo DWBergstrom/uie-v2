@@ -40,21 +40,21 @@ a {
   color: #c56c76;
 }
 
+/*  Header styling and alignment  */
 header {
   background: rgb(92, 92, 106) url(./img/background.jpg) no-repeat center center;
-  height: 120px;
+  height: 100px;
   width: 100%;
   text-align: center;
 }
 
-/*  Header styling and alignment  */
 .header-content {
-  display: flex;
+  display: block;
   flex-direction: row;
   width: 80%;
   text-align: center;
-  display: block;
   margin: auto;
+  padding-top: 5px;
   color: #e6e8e3;
 }
 
@@ -67,6 +67,7 @@ header {
   height: auto;
 }
 
+/* Top Section */
 .info-heading {
   margin: 10px auto;
   padding-left: 10px;
@@ -104,6 +105,7 @@ header {
   border: 1px solid #dddddd;
   max-width: 500px;
   background-color: #ffffff;
+  color: #797166;
 }
 
 .info-card p {
@@ -113,4 +115,115 @@ header {
 .button-container {
   display: flex;
   justify-content: center;
+}
+
+/* Speaker Info Container and Cards */
+.speaker-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.speaker-card {
+  width: 33%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.speaker-image {
+  height: 100%;
+  width: 25%;
+  border-radius: 5px;
+}
+
+.speaker-id-container {
+  display: flex;
+}
+
+.speaker-name-link-container {
+  padding: 0 10px;
+}
+
+.speaker-name,
+.speaker-description {
+  color: #797166;
+}
+
+.speaker-description {
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.speaker-info-card {
+  margin: 20px 0;
+  padding: 10px;
+  line-height: 20px;
+}
+
+/* Footer Styling */
+footer {
+  padding-bottom: 200px;
+  height: 150px;
+  background-color: #5c626a;
+  color: #cbcbd0;
+}
+
+.footer-info-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 0.8em;
+}
+
+.footer-em {
+  font-size: 0.8em;
+}
+
+.footer-info {
+  padding: 20px 10px;
+  line-height: 20px;
+}
+
+.uie-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.uie-image {
+  margin: 0 auto;
+  max-height: 70px;
+  padding: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 660px) {
+  .header-content img {
+    max-width: 300px;
+  }
+
+  .talk-info-container {
+    display: block;
+  }
+
+  .speaker-card-container {
+    margin-bottom: 30px;
+  }
+
+  .speaker-card {
+    width: 100%;
+  }
+
+  footer {
+    height: 300px;
+  }
+
+  .footer-info-container {
+    display: block;
+  }
 }
