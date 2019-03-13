@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900");
 
 html {
   box-sizing: border-box;
@@ -21,6 +21,23 @@ body {
 
 ul {
   list-style: square;
+  padding: 10px;
+  margin-left: 15px;
+  line-height: 30px;
+}
+
+button {
+  margin: 15px 0;
+  padding: 10px 30px;
+  border-radius: 7px;
+  background-color: #c56c76;
+  color: #f5f3f0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+a {
+  color: #c56c76;
 }
 
 header {
@@ -30,6 +47,7 @@ header {
   text-align: center;
 }
 
+/*  Header styling and alignment  */
 .header-content {
   display: flex;
   flex-direction: row;
@@ -49,10 +67,26 @@ header {
   height: auto;
 }
 
+.info-heading {
+  margin: 10px auto;
+  padding-left: 10px;
+  width: 90%;
+  max-width: 1000px;
+  color: #5c626a;
+  font-weight: 900;
+}
+
+.talk-heading {
+  color: #5c626a;
+}
+
 .talk-info-container {
   display: flex;
+  justify-content: space-around;
   margin: 0 auto;
   width: 90%;
+  max-width: 1000px;
+  color: #797166;
 }
 
 .talk-info-cards-container {
@@ -67,6 +101,16 @@ header {
 .info-card {
   margin: 10px;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid #dddddd;
   max-width: 500px;
+  background-color: #ffffff;
+}
+
+.info-card p {
+  padding: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
 }
